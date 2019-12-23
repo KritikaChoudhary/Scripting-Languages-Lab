@@ -1,0 +1,20 @@
+<!-- 2a. Create a front end that allows the user to enter details of the item purchased (item name, item price (option), number of items bought). On clicking of the submit button, the total cost for the item purchased should be calculated and displayed. On clicking on the ‘paid’ button, appropriate alert box should be popped up. -->
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>Purchase</title>
+    </head>
+    <body>
+      <h1 style="text-align:center;">Grocery Shopping</h1>
+      <h3>Enter quantity</h3>
+      <pre><span>Onions (Rs 60)  </span><input type="number" name="" value="0" min="0" id="onion">
+        <br><span>Tomatoes (Rs 50)</span><input type="number" name="" value="0" min="0" id="tom">
+        <br><span>Potatoes (Rs 40)</span><input type="number" name="" value="0" min="0" id="pot">
+      </pre>
+      <button type="button" name="button" onclick="sub()">Submit</button>
+      Pay: <span id="msg"></span>
+      <br><br><button type="button" name="button" onclick="alert('Amount deducted from your account!')">Paid</button>
+    </body>
+    <script src="2a.js " charset="utf-8"></script>
+  </html>
