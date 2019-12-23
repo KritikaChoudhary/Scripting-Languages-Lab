@@ -1,0 +1,23 @@
+<!-- 4b. Python and JavaScript - Shopping Cart Application: Design a simple Shopping Cart application which allows users to add items to their cart from a list of products. Allow users to view their cart (items and quantities of each) . -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shop</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Shopping</h1>
+    <form class="" action="{{ url_for('shop') }}" method="post">
+      <fieldset>
+        <legend>Fill below</legend>
+        <pre>
+          Onions Rs 70   <input type="number" name="onion" value="0"  min="0">
+          Potatoes Rs 40 <input type="number" name="potato" value="0" min="0">
+          Tomatoes Rs 50 <input type="number" name="tomato" value="0" min="0"><br>
+          <input type="submit" name="sub" value="Add to Cart">
+        </pre>
+      </fieldset>
+    </form>
+    <a href="{{ url_for('cart') }}">View Cart</a>
+  </body>
+</html>

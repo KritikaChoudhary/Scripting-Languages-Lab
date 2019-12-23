@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Cart</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Your Cart</h1>
+    {% for i in cart %}
+      {{ i["name"] }} : {{ i["qty"] }} : {{ i["price"] }} <br>
+    {% endfor %}
+    <br><br>
+    Total amount to be paid:{{ amt }}
+  </body>
+</html>
