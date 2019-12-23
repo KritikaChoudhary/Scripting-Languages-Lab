@@ -1,0 +1,42 @@
+<!-- 8b. JavaScript (JSON): Create two JSON objects. One contains the details of a ‘Patient’ as “name”, “AadharNumber” and a JSON array which has the “lab-tests” the patient has taken. The other contains the ‘Hospital’ details as “hospital-name” and “location”. Create a web page that displays the Hospital details when the page loads along with the text “Patient Details:” On mouse-hover the text “Patient Details:” changes colour and displays the details of the patient stored in the JSON object.-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hospital</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Hospital</h1>
+    <table>
+      <tr>
+        <th>Hospital Details</th>
+      </tr>
+    </table>
+    <table id="hd">
+      <tr>
+        <td>Name:</td><td id="name"></td>
+      </tr>
+      <tr>
+        <td>Location:</td><td id="loc"></td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th id="pd" onmouseover="change(this)" onmouseout="back(this)">Patient Details</th>
+      </tr>
+    </table>
+    <table id="p" hidden>
+      <tr>
+        <td>Name</td><td id="n"></td>
+      </tr>
+      <tr>
+        <td>AadharNumber</td><td id="an"></td>
+      </tr>
+      <tr>
+        <td>Lab Tests</td><td id="lt"></td>
+      </tr>
+    </table>
+  </body>
+  <script src="8b.js" charset="utf-8"></script>
+</html>
