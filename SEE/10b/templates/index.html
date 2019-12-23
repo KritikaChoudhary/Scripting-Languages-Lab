@@ -1,0 +1,29 @@
+<!-- 10b. Python and JavaScript – Student Registration: Design a HTML form that displays
+●	Two text fields to input the user’s USN and Date of Birth.
+●	Three text boxes to input three marks.
+Validate the data entry on the server side using Javascript so that null values are not accepted for all the five text boxes. Validate the entry on server-side using Python to ensure that USN is accepted in a proper pattern as well as date validations are done.-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Student</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;">Student Details</h1>
+    <h3>{{ msg }}</h3>
+    <form action="{{ url_for('index') }}" method="POST" id="frm">
+      <fieldset>
+        <legend>Enter the following details</legend>
+        <input type="text" name="usn" value="" placeholder="USN" id="usn"><br><br>
+        <input type="text" name="dob" value="" placeholder="DOB dd-mm-yyyy" id="dob"><br><br>
+        <input type="number" name="m1" value="0" min="0" placeholder="Marks in Maths" id="m1"><br><br>
+        <input type="number" name="m2" value="0" min="0" placeholder="Marks in SL" id="m2"><br><br>
+        <input type="number" name="m3" value="0" min="0" placeholder="Marks in DBMS" id="m3"><br>
+        <br><input type="submit" name="sub" value="Validate">
+      </fieldset>
+    </form>
+    <br>
+    <!-- <span id="msg"></span> -->
+  </body>
+  <!-- <script src="index.js" charset="utf-8"></script> -->
+</html>
